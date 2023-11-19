@@ -21,7 +21,7 @@ function App() {
   return (
     <div className='main'>
       <div className='main_header'>
-        <Link to={'/'}>home</Link>
+        <Link to={'/Musical_ears'}>home</Link>
        </div>
        <div className="smoke">
             <input id="checkbox" type="checkbox"/>
