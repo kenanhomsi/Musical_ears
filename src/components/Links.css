@@ -1,0 +1,83 @@
+.links{
+    display: grid;
+    grid-template-columns: 50% 50%;
+      gap: 5px;
+      transition: 0.3s;
+    }
+  
+    .links_btns {
+      --green: #ff66cc;
+      font-size: 15px;
+      text-align: center;
+      text-decoration: none;
+      padding: 0.7em 1.7em;
+      width: 170px;
+      position: relative;
+      font-family: inherit;
+      border-radius: 0.6em;
+      overflow: hidden;
+      transition: all 0.3s;
+      line-height: 1.4em;
+      border: 2px solid var(--green);
+      background: linear-gradient(to right, #cc48a06d 1%, transparent 40%,transparent 60% , #b22a859d 100%);
+      color: white;
+      box-shadow: inset 0 0 10px #ff66cc, 0 0 9px 3px ,#b00878;
+    }
+    
+    .links_btns:hover {
+      color: white;
+      box-shadow: inset 0 0 10px #ff66cc, 0 0 9px 3px #b00878;
+    }
+    
+    .links_btns:before {
+      content: "";
+      position: absolute;
+      left: -4em;
+      width: 4em;
+      height: 100%;
+      top: 0;
+      transition: transform .4s ease-in-out;
+      background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+    }
+    
+    .links_btns:hover:before {
+      transform: translateX(15em);
+    }
+    .main_links img{
+      width: 350px;
+      -webkit-animation: puff-out-center 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
+      animation: puff-out-center 1s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.5s both;
+    }
+    @-webkit-keyframes puff-out-center {
+      0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(2);
+                transform: scale(2);
+        -webkit-filter: blur(4px);
+                filter: blur(4px);
+        opacity: 0;
+      }
+    }
+    @keyframes puff-out-center {
+      0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(2);
+                transform: scale(2);
+        -webkit-filter: blur(4px);
+                filter: blur(4px);
+        opacity: 0;
+      }
+    }
+    

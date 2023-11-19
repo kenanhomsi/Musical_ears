@@ -1,0 +1,90 @@
+.Celebrity_eyes .small-image ,.Celebrity_eyes .big-image{
+    text-align: center;
+  }
+  .Celebrity_eyes .big-image,.Celebrity_eyes .small-image{
+    margin-top: 14px;
+    height: 330px;
+    width: 300px;
+  }
+  .Celebrity_eyes .body{
+    margin-top: 52px;
+    padding-left: 25px;
+  }
+  .Celebrity_eyes .big-image img{
+    width: 300px;
+  }
+  .ImageNumberBtn{
+    display: flex;
+      gap: 27px;
+      position: absolute;
+      bottom: 0px;
+  }
+  .ImageNumberBtn button{
+    padding: 7px;
+      font-size: 20px;
+      cursor: pointer;
+      background: #520e0e;
+      color: white;
+      border: 2px solid #877e7e;
+      margin-bottom: 5px;
+  }
+  
+  .Celebrity_eyes_card {
+    width: 220px;
+    height: 254px;
+    background: transparent;
+    transition: all 0.4s;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .Celebrity_eyes_card:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.2);
+    background: transparent;
+
+  }
+  
+  .first-content {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 15px;
+  }
+  .first-content  img{
+    width: 130px;
+  }
+  .Celebrity_eyes_card:hover .first-content {
+    height: 0px;
+    opacity: 0;
+  }
+  
+  .second-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 0px;
+    transform: rotate(90deg) scale(-1);
+  }
+  .second-content img{
+    width: 250px;
+
+  }
+  
+  .Celebrity_eyes_card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+  }

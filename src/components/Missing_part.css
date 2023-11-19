@@ -1,0 +1,153 @@
+.Missing_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px ;
+    }
+    .Missing_part .header{
+      margin-top: -85px;
+        margin-bottom: 32px;
+    }
+    .Missing_part .body{
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      justify-content: center;
+      align-items: center;
+    }
+    .choeses{
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    
+    }
+    .choeses div{
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    .choeses div img{
+      width:95px;
+    }
+    .image{
+      display: flex;
+      justify-content: center;
+    }
+    .image img{
+      margin: 10px 0;
+    width: 300px;
+    }
+    .Missing_part a{
+      text-decoration: none;
+      color: white;
+      text-align: left;
+      position: relative;
+      left: -120px;
+      font-size: 25px;
+    }
+    
+    
+    
+    .Missing_part_card {
+      width: 300px;
+      height: 280px;
+      position: relative;
+      background: #07182E;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    
+    .Missing_part_card h2 {
+      z-index: 10;
+      color: white;
+      font-size: 2em;
+    }
+    
+    .Missing_part_card::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      background-image: linear-gradient(180deg, #717c0e, #853089);
+      height: 150%;
+      animation: rotBGimg 3s linear infinite;
+      transition: all 0.2s linear;
+    }
+    
+    @keyframes rotBGimg {
+      from {
+        transform: rotate(0deg);
+      }
+    
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+    .Missing_part_card::after {
+      content: '';
+      position: absolute;
+      
+      background-image: url('../src/assets/الجزء المفقود/notcorrect.jpg');
+      background-position: top;
+      background-repeat: no-repeat;
+      inset: 10px;
+      border-radius: 15px;
+    }  
+    
+    /* .card:
+    hover:before {
+      background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+      animation: rotBGimg 3.5s linear infinite;
+    } */
+    .Missing_part_card2 {
+      width: 300px;
+      height: 280px;
+      position: relative;
+      display: flex;
+      background: #07182E;
+    
+      place-content: center;
+      place-items: center;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    
+    .Missing_part_card2 h2 {
+      z-index: 10;
+      color: white;
+      font-size: 2em;
+    }
+    
+    .Missing_part_card2::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      background-image: linear-gradient(180deg, #717c0e, #853089);
+      height: 150%;
+      animation: rotBGimg 3s linear infinite;
+      transition: all 0.2s linear;
+    }
+    
+    @keyframes rotBGimg {
+      from {
+        transform: rotate(0deg);
+      }
+    
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .Missing_part_card2::after{
+      content: '';
+      position: absolute;
+     background-image: url('../src/assets/الجزء المفقود/correct_one.jpg');
+     background-position: top;
+     background-repeat: no-repeat;
+      inset: 10px;
+      border-radius: 15px;
+    }
